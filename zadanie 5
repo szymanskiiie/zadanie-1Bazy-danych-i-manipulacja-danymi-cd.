@@ -1,0 +1,12 @@
+-- zadanie 5
+SELECT DISTINCT Imie FROM pracownicy;
+SELECT DISTINCT Nazwisko FROM pracownicy;
+SELECT DISTINCT Kurs FROM pracownicy;
+
+SELECT DISTINCT Kurs FROM pracownicy WHERE Nazwisko = 'Kowalczyk';
+
+SELECT * FROM pracownicy WHERE Wiek IS NULL;
+
+SELECT DISTINCT Kurs FROM pracownicy WHERE Imie = 'Patryk';
+
+ALTER TABLE Pracownicy RENAME TO Mentorzy;
