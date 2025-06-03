@@ -1,0 +1,12 @@
+-- zdaanie 4
+SELECT * FROM Pracownicy WHERE Imie = 'Anna';
+
+SELECT * FROM Pracownicy WHERE Imie IS NULL;
+
+SELECT Kurs FROM pracownicy WHERE Wiek BETWEEN 30 AND 40;
+
+SELECT ID, Wiek FROM Pracownicy WHERE ID BETWEEN 1 AND 7;
+
+SELECT * FROM Pracownicy WHERE Wiek IS NULL;
+
+ALTER TABLE pracownicy CHANGE Kurs Szkolenie VARCHAR(100);
