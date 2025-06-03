@@ -1,0 +1,19 @@
+-- zadanie 3
+SELECT * FROM pracownicy
+WHERE Nazwisko ='Kowalczyk';
+
+SELECT * FROM pracownicy
+WHERE Wiek BETWEEN 30 AND 40;
+
+SELECT * FROM pracownicy
+WHERE Nazwisko NOT LIKE '%and%';
+
+SELECT * FROM pracownicy
+WHERE ID BETWEEN 1 AND 7;
+
+
+SELECT * FROM pracownicy
+WHERE Imie IS NULL OR Nazwisko IS NULL OR Wiek IS NULL OR Kurs IS NULL;
+
+SELECT * FROM Pracownicy 
+WHERE Kurs IS NULL OR Kurs = '';
