@@ -1,0 +1,23 @@
+-- zdaanie 2
+SELECT *FROM pracownicy
+WHERE Wiek =28;
+
+SELECT * FROM pracownicy
+WHERE Wiek <=30;
+
+SELECT * FROM pracownicy
+WHERE Nazwisko LIKE '%ski%';
+
+ALTER TABLE pracownicy CHANGE NR ID INT;
+
+SELECT * FROM pracownicy
+WHERE ID IN (1,4,7,18,20);
+ 
+SELECT * FROM pracownicy
+WHERE Imie IS NOT NULL
+  AND Nazwisko IS NOT NULL
+  AND Wiek IS NOT NULL
+  AND Kurs IS NOT NULL;
+
+SELECT * FROM pracownicy
+WHERE Kurs NOT LIKE 'DS';
